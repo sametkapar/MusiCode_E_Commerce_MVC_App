@@ -10,13 +10,13 @@ namespace MusiCodeWebApp.Areas.ManagerPanel.Data
     {
         [Display(Name = "E-Posta")]
         [DataType(DataType.EmailAddress)]
-        [Required(ErrorMessage = "Bu alan boş bırakılamaz")]
+        [Required(ErrorMessage = "Mail alanı boş bırakılamaz")]
         [StringLength(maximumLength: 200, MinimumLength = 5, ErrorMessage = "Bu alan 5 - 200 karakter arasında olabilir")]
         public string Mail { get; set; }
 
         [Display(Name = "Şifre")]
         [DataType(DataType.Password)]
-        [Required(ErrorMessage = "Bu alan boş bırakılamaz")]
+        [Required(ErrorMessage = "şifre alanı boş bırakılamaz")]
         [StringLength(maximumLength: 30, MinimumLength = 5, ErrorMessage = "Bu alan 5 - 30 karakter arasında olabilir")]
         public string Password { get; set; }
 

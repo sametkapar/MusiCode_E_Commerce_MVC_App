@@ -97,6 +97,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\ManagerPanel\Assets\css\ManagerLogin.css" />
+    <Content Include="Areas\ManagerPanel\Assets\images\MusicodeLogo.png" />
+    <Content Include="Areas\ManagerPanel\Assets\images\MusicodeLogo.svg" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>

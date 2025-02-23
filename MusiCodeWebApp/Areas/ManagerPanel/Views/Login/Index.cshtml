@@ -1,4 +1,4 @@
-﻿
+﻿@model MusiCodeWebApp.Areas.ManagerPanel.Data.ManagerLoginViewModel
 @{
     Layout = null;
 }
@@ -8,10 +8,38 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <title>Yönetici Giriş</title>
+    <link href="~/Areas/ManagerPanel/Assets/css/ManagerLogin.css" rel="stylesheet" />
 </head>
 <body>
-    <div> 
+    <div class="container">
+        <div class="logo">
+            <img src="~/Areas/ManagerPanel/Assets/images/MusicodeLogo.png" />
+        </div>
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            //Bu kullanım web uygulamarında Cross-Site Request Forgery(CSRF) saldırılarını önlemek için geliştirilmiş güvenlik mekanizmasıdır.
+            if (ViewBag.mesaj != null)
+            {
+                <div class="validation-summary-errors">
+                    @ViewBag.mesaj
+                </div>
+            }
+            @Html.ValidationSummary()
+            <div class="row">
+                @Html.EditorFor(x=> x.Mail,"", new { htmlAttributes= new { @class="formTextbox", @placeholder="Mail Adresiniz" }})
+            </div>
+            <div class="row">
+               @Html.EditorFor(x=> x.Password,"", new { htmlAttributes = new { @class = "formTextbox", @placeholder = "Şifreniz" } })
+            </div>
+            <div class="row">
+                @Html.EditorFor(x => x.RememberMe) <label for="RememberMe">Unutma Beni... Unutama Beni...</label>
+            </div>
+            <div class="row">
+                <input type="submit" value="Giriş Yap" class="loginButton" />
+            </div>
+        }
     </div>
 </body>
 </html>

@@ -13,10 +13,27 @@ namespace MusiCodeWebApp.Areas.ManagerPanel.Controllers
         MusiCodeDBModel db = new MusiCodeDBModel();
         public ActionResult Index()
         {
+            if (Request.Cookies["ManagerCookie"] != null)
+            {
+                HttpCookie SavedCookie = Request.Cookies["ManagerCookie"];
+                string mail = SavedCookie.Values["mail"];
+                string password = SavedCookie.Values["password"];
+
+                Manager m = db.Managers.FirstOrDefault(x => x.Mail == mail && x.Password == password);
+                if (m != null)
+                {
+                    if (m.IsActive)
+                    {
+                        Session["ManagerSession"] = m;
+                        return RedirectToAction("Index", "Home");
+                    }
+                }
+            }
             return View();
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Index(ManagerLoginViewModel model)
         {
             if (ModelState.IsValid)
@@ -26,17 +43,25 @@ namespace MusiCodeWebApp.Areas.ManagerPanel.Controllers
                 {
                     if (m.IsActive)
                     {
-                        Session["manager"] = m;
+                        if (model.RememberMe)
+                        {
+                            HttpCookie cookie = new HttpCookie("ManagerCookie");
+                            cookie["mail"] = model.Mail;
+                            cookie["password"] = model.Password;
+                            cookie.Expires = DateTime.Now.AddDays(10);
+                            Response.Cookies.Add(cookie);
+                        }
+                        Session["ManagerSession"] = m;
                         return RedirectToAction("Index", "Home");
                     }
                     else
                     {
-                        ViewBag.mesaj = "Kullanıcı hesabınız askıya Alınmıştır";
+                        ViewBag.mesaj = "Kullanıcı hesabınız askıya alınmıştır";
                     }
                 }
                 else
                 {
-                    ViewBag.mesaj = "Kullanıcı Bulunamadı";
+                    ViewBag.mesaj = "Kullanıcı bulunamadı";
                 }
             }
             return View(model);
