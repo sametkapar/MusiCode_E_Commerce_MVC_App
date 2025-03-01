@@ -98,6 +98,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\ManagerPanel\Assets\css\ManagerLogin.css" />
+    <Content Include="Areas\ManagerPanel\Assets\css\ManagerStyle.css" />
+    <Content Include="Areas\ManagerPanel\Assets\images\MusicodeLogo-White.png" />
     <Content Include="Areas\ManagerPanel\Assets\images\MusicodeLogo.png" />
     <Content Include="Areas\ManagerPanel\Assets\images\MusicodeLogo.svg" />
     <Content Include="Global.asax" />
@@ -105,8 +107,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\ManagerPanel\Controllers\HomeController.cs" />
     <Compile Include="Areas\ManagerPanel\Controllers\LoginController.cs" />
     <Compile Include="Areas\ManagerPanel\Data\ManagerLoginViewModel.cs" />
+    <Compile Include="Areas\ManagerPanel\Filters\ManagerLoginRequiredFilterAttribute.cs" />
     <Compile Include="Areas\ManagerPanel\ManagerPanelAreaRegistration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -122,6 +126,8 @@
     <Content Include="Views\web.config" />
     <Content Include="Areas\ManagerPanel\Views\web.config" />
     <Content Include="Areas\ManagerPanel\Views\Login\Index.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\Shared\_LayoutPage1.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\Home\Index.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -132,7 +138,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\ManagerPanel\Views\Shared\" />
     <Folder Include="Controllers\" />
   </ItemGroup>
   <PropertyGroup>

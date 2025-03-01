@@ -3,6 +3,7 @@ using MusiCodeWebApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 
@@ -65,6 +66,18 @@ namespace MusiCodeWebApp.Areas.ManagerPanel.Controllers
                 }
             }
             return View(model);
+        }
+        public ActionResult LogOut()
+        {
+            Session["ManagerSession"] = null;
+            if (Request.Cookies["ManagerCookie"] != null)
+            {
+                HttpCookie SavedCookie = Request.Cookies["ManagerCookie"];
+                SavedCookie.Expires = DateTime.Now.AddDays(-1);
+                Response.Cookies.Add(SavedCookie);
+            }
+           
+            return RedirectToAction("Index", "Login");
         }
     }
 }

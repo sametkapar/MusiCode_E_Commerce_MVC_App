@@ -1,0 +1,39 @@
+﻿@using MusiCodeWebApp.Models;
+@{
+    Manager m = Session["ManagerSession"] as Manager;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Areas/ManagerPanel/Assets/css/ManagerStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="menuContainer">
+        <div class="logoBase">
+            <img src="~/Areas/ManagerPanel/Assets/images/MusicodeLogo-White.png" />
+        </div>
+        <div class="userBase">
+            <a href="#" style="color:gray">@m.Name @m.Surname</a>
+            <a href="@Url.Action("LogOut","Login")">Çıkış Yap</a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="sideMenu">
+        <label>Yönetim</label>
+        <a href="@Url.Action("Index","Home")">Anasayfa</a>
+        <label>Kategori</label>
+        <a href="@Url.Action("Index","Home")">Kategori Listele</a>
+        <a href="@Url.Action("Index","Home")">Kategori Ekle</a>
+        <label>Marka</label>
+        <a href="@Url.Action("Index","Home")">Marka Listele</a>
+        <a href="@Url.Action("Index","Home")">Marka Ekle</a>
+    </div>
+    <div class="mainContainer">
+        @RenderBody()
+    </div>
+    <div class="clearfix"></div>
+</body>
+</html>
