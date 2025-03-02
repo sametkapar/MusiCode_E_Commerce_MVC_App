@@ -1,0 +1,55 @@
+﻿@model IEnumerable<MusiCodeWebApp.Models.Category>
+@{
+    ViewBag.Title = "Kategoriler";
+    Layout = "~/Areas/ManagerPanel/Views/Shared/_LayoutPage1.cshtml";
+}
+@section styles
+{
+    <link href="~/Areas/ManagerPanel/Assets/css/FormStyle.css" rel="stylesheet" />
+}
+<div class="pagetitle">
+    <h2>Kategoriler</h2>
+</div>
+
+<div class="">
+    @if (TempData["mesaj"] != null)
+    {
+        <h3 style="color:forestgreen; margin-bottom:10px;">@TempData["mesaj"]</h3>
+        TempData["mesaj"] = null;
+    }
+    <table class="tablo" cellspacing="0" cellpadding="0">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.ID)</th>
+            <th>@Html.DisplayNameFor(model => model.Name)</th>
+            <th>Açıklama</th>
+            <th>Durum</th>
+            <th>Seçenekler</th>
+        </tr>
+        @foreach (MusiCodeWebApp.Models.Category item in Model)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.Name</td>
+                <td>
+                    @{ string des = string.Empty;
+                        if (item.Description.Length > 30)
+                        {
+                            des = item.Description.Substring(0, 30) + " ...";
+                        }
+                        else
+                        {
+                            des = item.Description;
+                        }
+                    }
+                    <label>@des</label>
+                </td>
+                <td>@item.IsActive</td>
+                <td>
+                    <a href="@Url.Action("Edit","Category", new {id = item.ID})" class="editbutton">Düzenle</a>
+                    <a href="@Url.Action("Delete","Category", new {id = item.ID})" class="deletebutton">Sil</a>
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+

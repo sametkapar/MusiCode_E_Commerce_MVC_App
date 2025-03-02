@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #efefef;
+   /* background-color: #efefef;*/
     font-family: Calibri;
 }
 
@@ -75,3 +75,4 @@ body {
     float: left;
     padding: 30px;
 }
+
