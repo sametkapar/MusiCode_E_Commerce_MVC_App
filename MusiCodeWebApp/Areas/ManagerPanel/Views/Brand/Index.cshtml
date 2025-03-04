@@ -1,0 +1,40 @@
+﻿@model IEnumerable<MusiCodeWebApp.Models.Brand>
+@{
+    ViewBag.Title = "Markalar";
+    Layout = "~/Areas/ManagerPanel/Views/Shared/_LayoutPage1.cshtml";
+}
+@section styles
+{
+    <link href="~/Areas/ManagerPanel/Assets/css/FormStyle.css" rel="stylesheet" />
+}
+
+<div class="pagetitle">
+    <h2>Markalar</h2>
+</div>
+<div class="">
+    <table class="tablo" cellpadding="0" cellspacing="0">
+        <tr>
+            <th>İsim</th>
+            <th>Adres</th>
+            <th>Telefon Numarası</th>
+            <th>Durum</th>
+            <th>Seçenekler</th>
+        </tr>
+        @foreach (MusiCodeWebApp.Models.Brand item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Address</td>
+                <td>@item.PhoneNumber</td>
+                <td>@item.IsActive</td>
+                <td>
+                    <a href="@Url.Action("Edit","Brand", new {id = item.ID})" class="editbutton">Düzenle</a>
+                    <a href="@Url.Action("Delete","Brand", new {id = item.ID})" class="deletebutton">Sil</a>
+                </td>
+            </tr>
+        }
+    </table>
+   
+
+
+</div>
