@@ -1,0 +1,50 @@
+﻿@model IEnumerable<MusiCodeWebApp.Models.Product>
+@{
+    ViewBag.Title = "Ürünler";
+    Layout = "~/Areas/ManagerPanel/Views/Shared/_LayoutPage1.cshtml";
+}
+@section styles
+{
+    <link href="~/Areas/ManagerPanel/Assets/css/FormStyle.css" rel="stylesheet" />
+}
+
+<div class="pagetitle">
+    <h2>Ürünler</h2>
+</div>
+<div class="">
+    @if (TempData["mesaj"] != null)
+    {
+        <h3 style="color:forestgreen; margin-bottom:10px;">@TempData["mesaj"]</h3>
+        TempData["mesaj"] = null;
+    }
+    <table class="tablo" cellpadding="0" cellspacing="0">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.ID)</th>
+            <th>@Html.DisplayNameFor(model => model.Name)</th>
+            <th>@Html.DisplayNameFor(model => model.Category)</th>
+            <th>@Html.DisplayNameFor(model => model.Brand)</th>
+            <th>@Html.DisplayNameFor(model => model.UnitsInStock)</th>
+            <th>@Html.DisplayNameFor(model => model.UnitPrice)</th>
+            <th>Durum</th>
+            <th>Seçenekler</th>
+        </tr>
+
+        @foreach (MusiCodeWebApp.Models.Product item in Model)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.Name</td>
+                <td>@item.Category.Name</td>
+                <td>@item.Brand.Name</td>
+                <td>@item.UnitsInStock</td>
+                <td>@item.UnitPrice</td>
+                <td>@item.IsActive</td>
+                <td>
+                    <a href="@Url.Action("Edit","Product", new {id = item.ID})" class="editbutton">Düzenle</a>
+                    <a href="@Url.Action("Delete","Product", new {id = item.ID})" class="deletebutton">Sil</a>
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+

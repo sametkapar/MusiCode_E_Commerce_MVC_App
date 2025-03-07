@@ -66,16 +66,17 @@ namespace MusiCodeWebApp.Areas.ManagerPanel.Controllers
             {
                 try
                 {
-                    if (!model.PhoneNumber.StartsWith("0"))
-                    {
-                        ViewBag.mesaj = "Telefon numarası 0 ile başlamalıdır";
-                    }
-                    else
+                    if (model.PhoneNumber.StartsWith("0"))
                     {
                         db.Entry(model).State = System.Data.Entity.EntityState.Modified;
                         db.SaveChanges();
                         TempData["mesaj"] = "Marka güncelleme başarılı";
                         return RedirectToAction("Index", "Brand");
+                    }
+                    else
+                    {
+                        
+                        ViewBag.mesaj = "Lütfen başında 0 olmadan giriniz";
                     }
                 }
                 catch

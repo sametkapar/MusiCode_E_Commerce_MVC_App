@@ -24,7 +24,7 @@ namespace MusiCodeWebApp.Models
         public string Address { get; set; }
 
         [Display(Name = "Telefon Numarası")]
-        [StringLength(maximumLength: 11, MinimumLength = 11, ErrorMessage = "Bu alan 11 karakter olmalıdır")]
+        [StringLength(maximumLength: 11, MinimumLength = 11, ErrorMessage = "Telefon numarası 11 karakter olmalıdır")]
         public string PhoneNumber { get; set; }
 
         [Display(Name = "Durum")]

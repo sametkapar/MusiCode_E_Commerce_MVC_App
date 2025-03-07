@@ -30,7 +30,7 @@
         </div>
         <div class="row">
             <label>Telefon Numarası</label>
-            @Html.EditorFor(x => x.PhoneNumber, new { htmlAttributes = new { @class = "textbox" } })
+            @Html.EditorFor(x => x.PhoneNumber, new { htmlAttributes = new { @class = "textbox" , placeholder = "05551112233"} })
             @Html.ValidationMessageFor(x => x.PhoneNumber, "", new { @class = "validationmesage" })
         </div>
         <div class="row">
