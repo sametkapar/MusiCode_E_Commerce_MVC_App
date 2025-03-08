@@ -33,7 +33,6 @@ namespace MusiCodeWebApp.Models
         public decimal UnitPrice { get; set; }
         [Display(Name = "Satışta mı")]
         public bool IsActive { get; set; }
-        public virtual ICollection<Brand> Brands { get; set; }
-        public virtual ICollection<Category> Categories { get; set; }
+     
     }
 }
