@@ -1,0 +1,79 @@
+﻿@model MusiCodeWebApp.Models.Product
+@{
+    ViewBag.Title = "Ürün Ekle";
+    Layout = "~/Areas/ManagerPanel/Views/Shared/_LayoutPage1.cshtml";
+}
+@section styles
+{
+    <link href="~/Areas/ManagerPanel/Assets/css/FormStyle.css" rel="stylesheet" />
+    <style>
+        .sol {
+            float: left;
+            width: 710px;
+            margin-right: 10px;
+        }
+
+        .sag {
+            float: left;
+            width: 710px;
+            margin-left: 20px;
+        }
+    </style>
+}
+<div class="pagetitle">
+    <h2>Ürün Ekle</h2>
+</div>
+<div class="formContainer">
+    @using (Html.BeginForm("Create","Product", FormMethod.Post, new {enctype="multipart/form-data"}))
+    {
+        if (ViewBag.mesaj != null)
+        {
+            <label class="validationmesage">@ViewBag.mesaj</label>
+        }
+        <div class="sol">
+            <div class="row">
+                <label>Isim</label>
+                @Html.EditorFor(x => x.Name, new { htmlAttributes = new { @class = "textbox" } })
+                @Html.ValidationMessageFor(x => x.Name, "", new { @class = "validationmesage" })
+            </div>
+            <div class="row">
+                <label>Kategori Seçiniz</label>
+                @Html.DropDownList("Category_ID", null, htmlAttributes: new { @class = "textbox" })
+            </div>
+            <div class="row">
+                <label>Marka Seçiniz</label>
+                @Html.DropDownList("Brand_ID", null, htmlAttributes: new { @class = "textbox" })
+            </div>
+            <div class="row">
+                <label>Açıklama</label>
+                @Html.EditorFor(x => x.Description, new { htmlAttributes = new { @class = "textbox" } })
+                @Html.ValidationMessageFor(x => x.Description, "", new { @class = "validationmesage" })
+            </div>
+            <div class="row">
+                @Html.EditorFor(x => x.IsActive, new { htmlAttributes = new { @id = "isActive" } })
+                <label for="isActive"> Aktif Kategori</label>
+            </div>
+        </div>
+        <div class="sag">
+            <div class="row">
+                <label>Stok</label>
+                @Html.EditorFor(x => x.Stock, new { htmlAttributes = new { @class = "textbox" } })
+                @Html.ValidationMessageFor(x => x.Stock, "", new { @class = "validationmesage" })
+            </div>
+            <div class="row">
+                <label>Fiyat</label>
+                @Html.EditorFor(x => x.Price, new { htmlAttributes = new { @class = "textbox" } })
+                @Html.ValidationMessageFor(x => x.Price, "", new { @class = "validationmesage" })
+            </div>
+            <div class="row">
+                <label>Resim</label>
+                <input type="file" name="image" class="textbox" />
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="row">
+            <button type="submit" class="formbutton">Kategori Ekle</button>
+        </div>
+    }
+</div>
+

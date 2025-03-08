@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|c:\\users\\alp\\documents\\github\\musicode_e_commerce_mvc_app\\musicodewebapp\\areas\\managerpanel\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|solutionrelative:musicodewebapp\\areas\\managerpanel\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|c:\\users\\alp\\documents\\github\\musicode_e_commerce_mvc_app\\musicodewebapp\\areas\\managerpanel\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|solutionrelative:musicodewebapp\\areas\\managerpanel\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|c:\\users\\alp\\documents\\github\\musicode_e_commerce_mvc_app\\musicodewebapp\\areas\\managerpanel\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|c:\\users\\alp\\documents\\github\\musicode_e_commerce_mvc_app\\musicodewebapp\\areas\\managerpanel\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|solutionrelative:musicodewebapp\\areas\\managerpanel\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|c:\\users\\alp\\documents\\github\\musicode_e_commerce_mvc_app\\musicodewebapp\\areas\\managerpanel\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|solutionrelative:musicodewebapp\\areas\\managerpanel\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\musicodewebapp\\areas\\managerpanel\\views\\shared\\_layoutpage1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|solutionrelative:musicodewebapp\\areas\\managerpanel\\views\\shared\\_layoutpage1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\musicodewebapp\\areas\\managerpanel\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|solutionrelative:musicodewebapp\\areas\\managerpanel\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|c:\\users\\alp\\documents\\github\\musicode_e_commerce_mvc_app\\musicodewebapp\\areas\\managerpanel\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|solutionrelative:musicodewebapp\\areas\\managerpanel\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|c:\\users\\alp\\documents\\github\\musicode_e_commerce_mvc_app\\musicodewebapp\\models\\musicodedbmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|solutionrelative:musicodewebapp\\models\\musicodedbmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|c:\\users\\alp\\documents\\github\\musicode_e_commerce_mvc_app\\musicodewebapp\\areas\\managerpanel\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|solutionrelative:musicodewebapp\\areas\\managerpanel\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|c:\\users\\alp\\documents\\github\\musicode_e_commerce_mvc_app\\musicodewebapp\\areas\\managerpanel\\assets\\css\\formstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|solutionrelative:musicodewebapp\\areas\\managerpanel\\assets\\css\\formstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|c:\\users\\alp\\documents\\github\\musicode_e_commerce_mvc_app\\musicodewebapp\\areas\\managerpanel\\assets\\css\\managerlogin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|solutionrelative:musicodewebapp\\areas\\managerpanel\\assets\\css\\managerlogin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|c:\\users\\alp\\documents\\github\\musicode_e_commerce_mvc_app\\musicodewebapp\\areas\\managerpanel\\views\\shared\\_layoutpage1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|solutionrelative:musicodewebapp\\areas\\managerpanel\\views\\shared\\_layoutpage1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|c:\\users\\alp\\documents\\github\\musicode_e_commerce_mvc_app\\musicodewebapp\\areas\\managerpanel\\controllers\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81DD8B22-7BF2-465E-8EE7-B7018C2DDCCD}|MusiCodeWebApp\\MusiCodeWebApp.csproj|solutionrelative:musicodewebapp\\areas\\managerpanel\\controllers\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,102 +47,96 @@
           ]
         },
         {
-          "DockedWidth": 125,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ManagerLogin.css",
-              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\MusiCodeWebApp\\Areas\\ManagerPanel\\Assets\\css\\ManagerLogin.css",
-              "RelativeDocumentMoniker": "MusiCodeWebApp\\Areas\\ManagerPanel\\Assets\\css\\ManagerLogin.css",
-              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\MusiCodeWebApp\\Areas\\ManagerPanel\\Assets\\css\\ManagerLogin.css",
-              "RelativeToolTip": "MusiCodeWebApp\\Areas\\ManagerPanel\\Assets\\css\\ManagerLogin.css",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADQAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-02T11:42:32.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormStyle.css",
-              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\MusiCodeWebApp\\Areas\\ManagerPanel\\Assets\\css\\FormStyle.css",
-              "RelativeDocumentMoniker": "MusiCodeWebApp\\Areas\\ManagerPanel\\Assets\\css\\FormStyle.css",
-              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\MusiCodeWebApp\\Areas\\ManagerPanel\\Assets\\css\\FormStyle.css",
-              "RelativeToolTip": "MusiCodeWebApp\\Areas\\ManagerPanel\\Assets\\css\\FormStyle.css",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAACkAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-02T10:35:43.443Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
           "DockedWidth": 322,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\MusiCodeWebApp\\Areas\\ManagerPanel\\Views\\Category\\Edit.cshtml",
-              "RelativeDocumentMoniker": "MusiCodeWebApp\\Areas\\ManagerPanel\\Views\\Category\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\MusiCodeWebApp\\Areas\\ManagerPanel\\Views\\Category\\Edit.cshtml",
-              "RelativeToolTip": "MusiCodeWebApp\\Areas\\ManagerPanel\\Views\\Category\\Edit.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-02T11:57:44.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\MusiCodeWebApp\\Areas\\ManagerPanel\\Views\\Category\\Create.cshtml",
-              "RelativeDocumentMoniker": "MusiCodeWebApp\\Areas\\ManagerPanel\\Views\\Category\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\MusiCodeWebApp\\Areas\\ManagerPanel\\Views\\Category\\Create.cshtml",
-              "RelativeToolTip": "MusiCodeWebApp\\Areas\\ManagerPanel\\Views\\Category\\Create.cshtml",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAuwCcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-02T11:18:55.199Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\MusiCodeWebApp\\Areas\\ManagerPanel\\Views\\Category\\Index.cshtml",
-              "RelativeDocumentMoniker": "MusiCodeWebApp\\Areas\\ManagerPanel\\Views\\Category\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\MusiCodeWebApp\\Areas\\ManagerPanel\\Views\\Category\\Index.cshtml",
-              "RelativeToolTip": "MusiCodeWebApp\\Areas\\ManagerPanel\\Views\\Category\\Index.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\MusiCodeWebApp\\Areas\\ManagerPanel\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "MusiCodeWebApp\\Areas\\ManagerPanel\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\MusiCodeWebApp\\Areas\\ManagerPanel\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "MusiCodeWebApp\\Areas\\ManagerPanel\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-02T10:51:06.045Z",
+              "WhenOpened": "2025-03-08T12:45:27.144Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\MusiCodeWebApp\\Areas\\ManagerPanel\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "MusiCodeWebApp\\Areas\\ManagerPanel\\Views\\Product\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\MusiCodeWebApp\\Areas\\ManagerPanel\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "MusiCodeWebApp\\Areas\\ManagerPanel\\Views\\Product\\Create.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAABcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-08T12:05:10.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\MusiCodeWebApp\\Areas\\ManagerPanel\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "MusiCodeWebApp\\Areas\\ManagerPanel\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\MusiCodeWebApp\\Areas\\ManagerPanel\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "MusiCodeWebApp\\Areas\\ManagerPanel\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowCQAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T10:47:32.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BrandController.cs",
+              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\MusiCodeWebApp\\Areas\\ManagerPanel\\Controllers\\BrandController.cs",
+              "RelativeDocumentMoniker": "MusiCodeWebApp\\Areas\\ManagerPanel\\Controllers\\BrandController.cs",
+              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\MusiCodeWebApp\\Areas\\ManagerPanel\\Controllers\\BrandController.cs",
+              "RelativeToolTip": "MusiCodeWebApp\\Areas\\ManagerPanel\\Controllers\\BrandController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAcwE4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T10:39:57.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MusiCodeDBModel.cs",
+              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\MusiCodeWebApp\\Models\\MusiCodeDBModel.cs",
+              "RelativeDocumentMoniker": "MusiCodeWebApp\\Models\\MusiCodeDBModel.cs",
+              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\MusiCodeWebApp\\Models\\MusiCodeDBModel.cs",
+              "RelativeToolTip": "MusiCodeWebApp\\Models\\MusiCodeDBModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T10:39:18.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\MusiCodeWebApp\\Areas\\ManagerPanel\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "MusiCodeWebApp\\Areas\\ManagerPanel\\Controllers\\CategoryController.cs",
               "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\MusiCodeWebApp\\Areas\\ManagerPanel\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "MusiCodeWebApp\\Areas\\ManagerPanel\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAcwE8AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAcwFYAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-02T10:49:27.191Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "_LayoutPage1.cshtml",
               "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\MusiCodeWebApp\\Areas\\ManagerPanel\\Views\\Shared\\_LayoutPage1.cshtml",
               "RelativeDocumentMoniker": "MusiCodeWebApp\\Areas\\ManagerPanel\\Views\\Shared\\_LayoutPage1.cshtml",
               "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MusiCode_E_Commerce_MVC_App\\MusiCodeWebApp\\Areas\\ManagerPanel\\Views\\Shared\\_LayoutPage1.cshtml",
               "RelativeToolTip": "MusiCodeWebApp\\Areas\\ManagerPanel\\Views\\Shared\\_LayoutPage1.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACAAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACQAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-02T10:36:23.004Z",
               "EditorCaption": ""

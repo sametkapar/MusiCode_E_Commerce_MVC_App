@@ -14,7 +14,7 @@ namespace MusiCodeWebApp.Areas.ManagerPanel.Filters
         public void OnAuthentication(AuthenticationContext filterContext)
         {
             //Kontrol işlemlerimizi bu alanda yapacağız
-            if (!string.IsNullOrEmpty(Convert.ToString(filterContext.HttpContext.Session["ManagerSession"])))
+            if (string.IsNullOrEmpty(Convert.ToString(filterContext.HttpContext.Session["ManagerSession"])))
             {
                 if (filterContext.HttpContext.Request.Cookies["ManagerCookie"] != null)
                 {
@@ -30,11 +30,12 @@ namespace MusiCodeWebApp.Areas.ManagerPanel.Filters
                         }
                     }
                 }
+                else
+                {
+                    filterContext.Result = new HttpUnauthorizedResult();
+                }
             }
-            else
-            {
-                filterContext.Result = new HttpUnauthorizedResult();
-            }
+
         }
 
         public void OnAuthenticationChallenge(AuthenticationChallengeContext filterContext)
