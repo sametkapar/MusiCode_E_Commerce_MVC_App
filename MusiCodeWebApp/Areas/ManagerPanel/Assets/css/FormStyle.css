@@ -61,3 +61,13 @@
     border-radius: 5px;
     cursor:pointer;
 }
+.productEditImage
+{
+    width:150px;
+    float:left;
+}
+.productEditImageFile {
+    width: 550px;
+    float: left;
+    padding-left:10px;
+}

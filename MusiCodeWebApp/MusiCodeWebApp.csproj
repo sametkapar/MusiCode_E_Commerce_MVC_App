@@ -100,9 +100,11 @@
     <Content Include="Areas\ManagerPanel\Assets\css\FormStyle.css" />
     <Content Include="Areas\ManagerPanel\Assets\css\ManagerLogin.css" />
     <Content Include="Areas\ManagerPanel\Assets\css\ManagerStyle.css" />
+    <Content Include="Areas\ManagerPanel\Assets\images\KS4fSTQC7T.gif" />
     <Content Include="Areas\ManagerPanel\Assets\images\MusicodeLogo-White.png" />
     <Content Include="Areas\ManagerPanel\Assets\images\MusicodeLogo.png" />
     <Content Include="Areas\ManagerPanel\Assets\images\MusicodeLogo.svg" />
+    <Content Include="Areas\ManagerPanel\Assets\images\recent.png" />
     <Content Include="Assets\ProductImages\none.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -114,6 +116,7 @@
     <Compile Include="Areas\ManagerPanel\Controllers\HomeController.cs" />
     <Compile Include="Areas\ManagerPanel\Controllers\LoginController.cs" />
     <Compile Include="Areas\ManagerPanel\Controllers\ProductController.cs" />
+    <Compile Include="Areas\ManagerPanel\Controllers\SystemController.cs" />
     <Compile Include="Areas\ManagerPanel\Data\ManagerLoginViewModel.cs" />
     <Compile Include="Areas\ManagerPanel\Filters\ManagerLoginRequiredFilterAttribute.cs" />
     <Compile Include="Areas\ManagerPanel\ManagerPanelAreaRegistration.cs" />
@@ -144,6 +147,8 @@
     <Content Include="Areas\ManagerPanel\Views\Brand\Edit.cshtml" />
     <Content Include="Areas\ManagerPanel\Views\Product\Create.cshtml" />
     <Content Include="Areas\ManagerPanel\Views\Product\Index.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\Product\Edit.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\System\Error.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

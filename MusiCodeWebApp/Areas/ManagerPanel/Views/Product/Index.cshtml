@@ -27,21 +27,28 @@
             <th>Stok</th>
             <th>Fiyat</th>
             <th>Durum</th>
+            <th>Önerilen</th>
             <th>Seçenekler</th>
         </tr>
         @foreach (MusiCodeWebApp.Models.Product item in Model)
         {
             <tr>
                 <td align="center">
-                    <img src="~/Assets/ProductImages/@item.Image" width="80" />
+                    <img src="~/Assets/ProductImages/@item.Image" width="64" />
                 </td>
                 <td>@item.ID</td>
                 <td>@item.Name</td>
-                <td>@item.Category.Name</td>
-                <td>@item.Brand.Name</td>
-                <td>@item.Stock Adet</td>
-                <th>@item.Price ₺</th>
-                <td>@item.IsActive</td>
+                <td align="center">@item.Category.Name</td>
+                <td align="center">@item.Brand.Name</td>
+                <td align="center">@item.Stock Adet</td>
+                <th align="center">@item.Price ₺</th>
+                <td align="center">@item.IsActive</td>
+                <td align="center">
+                    @if (item.IsRecent)
+                    {
+                        <img src="~/Areas/ManagerPanel/Assets/images/recent.png" width="24" />
+                    }
+                </td>
                 <td>
                     <a href="@Url.Action("Edit","Product", new {id = item.ID})" class="editbutton">Düzenle</a>
                     <a href="@Url.Action("Delete","Product", new {id = item.ID})" class="deletebutton">Sil</a>
