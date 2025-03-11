@@ -1,0 +1,67 @@
+﻿*, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Calibri;
+}
+.bosluk{
+    padding:8px;
+    background:white;
+}
+.header {
+    background-color: #7b0dbb;
+    color: white;
+}
+.topInfo {
+    padding:6px 0;
+    width: 1170px;
+    margin: 0 auto;
+}
+.clearfix{
+    clear:both;
+}
+.infoRigth{
+    float:right;
+}
+.infoLeft
+{
+    float:left;
+}
+.logoArea {
+    margin:10px 0;
+    padding:15px;
+    width: 170px;
+    float: left;
+}
+.logoArea img{
+    width:100%;
+}
+.memberArea {
+    margin: 10px 0;
+    float: right;
+    padding: 15px;
+}
+.memberArea a{
+    text-decoration:none;
+    margin-left:5px;
+    color:black;
+    padding:2px;
+    font-weight:900;
+}
+.mainMenu {
+    border-top: 1px solid #7b0dbb;
+    border-bottom: 1px solid #7b0dbb;
+    min-height: 30px;
+    padding-top: 15px;
+    background-color: #7b0dbb;
+}
+    .mainMenu a {
+        padding: 0 100px;   
+        font-weight: 900;
+        text-decoration: none;
+        color:white;
+
+    }
+

@@ -49,5 +49,7 @@ namespace MusiCodeWebApp.Models
         public bool IsActive { get; set; }
 
         public bool IsRecent { get; set; }
+
+
     }
 }

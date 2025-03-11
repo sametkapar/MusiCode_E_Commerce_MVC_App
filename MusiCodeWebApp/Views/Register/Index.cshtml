@@ -1,0 +1,57 @@
+﻿@model MusiCodeWebApp.Models.Member
+@{
+    ViewBag.Title = "Kayıt Ol";
+    Layout = "~/Views/Shared/HomeLayoutPage.cshtml";
+}
+@section interfacestyle
+{
+    <link href="~/Assets/css/mainFormStyle.css" rel="stylesheet" />
+}
+
+
+<div class="topInfo">
+    <h2 style="text-align:center">Üye Kayıt</h2>
+    @using (Html.BeginForm())
+    {
+        <div class="regPanel">
+            <div class="logo">
+                <img src="~/Areas/ManagerPanel/Assets/images/MusicodeLogo.png" />
+            </div>
+            @if (ViewBag.Error != null)
+            {
+                <div class="validation-summary-errors">
+                    @ViewBag.Error
+                </div>
+            }
+            <div class="row">
+                <label>İsim</label>
+                @Html.EditorFor(x => x.Name, new { htmlAttributes = new { @class = "textbox" } })
+                @Html.ValidationMessageFor(x => x.Name, "", new { @class = "validationmesage" })
+            </div>
+            <div class="row">
+                <label>Soyisim</label>
+                @Html.EditorFor(x => x.Surname, new { htmlAttributes = new { @class = "textbox" } })
+                @Html.ValidationMessageFor(x => x.Surname, "", new { @class = "validationmesage" })
+            </div>
+            <div class="row">
+                <label>E-Posta</label>
+                @Html.EditorFor(x => x.Mail, new { htmlAttributes = new { @class = "textbox" } })
+                @Html.ValidationMessageFor(x => x.Mail, "", new { @class = "validationmesage" })
+            </div>
+            <div class="row">
+                <label>Kullanıcı Adı</label>
+                @Html.EditorFor(x => x.UserName, new { htmlAttributes = new { @class = "textbox" } })
+                @Html.ValidationMessageFor(x => x.UserName, "", new { @class = "validationmesage" })
+            </div>
+            <div class="row">
+                <label>Şifre</label>
+                @Html.EditorFor(x => x.Password, new { htmlAttributes = new { @class = "textbox" } })
+                @Html.ValidationMessageFor(x => x.Password, "", new { @class = "validationmesage" })
+            </div>
+            <div class="row">
+                <button type="submit" class="formButton">Kayıt Ol</button>
+            </div>
+        </div>
+    }
+</div>
+

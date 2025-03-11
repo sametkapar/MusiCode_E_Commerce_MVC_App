@@ -1,0 +1,92 @@
+﻿.arayer {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 14px;
+    margin-bottom: 10px;
+}
+
+.productsMenu {
+    float: left;
+    width: 350px;
+}
+
+.imgArea {
+    float: right;
+    width: 800px;
+}
+
+    .imgArea img {
+        width: 100%;
+    }
+.regPanel {
+    border: 1px solid silver;
+    padding: 15px;
+    width:450px;
+    margin:auto;
+}
+.product {
+    min-height: 270px;
+    border: 1px solid black;
+}
+.row {
+    margin: 10px 0;
+}
+.formButton {
+    padding: 15px;
+    background-color: #7e0490;
+    color: white;
+    font-size: 15pt;
+    border: 1px solid #7e0490;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 180px;
+}
+.textbox {
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 7px;
+}
+.logo {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+    .logo img {
+        width: 250px;
+    }
+
+.validation-summary-errors {
+    padding: 15px;
+    color: darkred;
+    background-color: #fbb2b2;
+    border-radius: 5px;
+}
+
+    .validation-summary-errors ul {
+        list-style-type: none;
+    }
+
+        .validation-summary-errors ul li {
+            margin: 7px 0px;
+        }
+
+.validation-summary-success {
+    padding: 15px;
+    color: darkred;
+    background-color: #01580b;
+    border-radius: 5px;
+}
+
+    .validation-summary-success ul {
+        list-style-type: none;
+    }
+
+        .validation-summary-success ul li {
+            margin: 7px 0px;
+        }
+.validationmesage {
+    color:red;
+}

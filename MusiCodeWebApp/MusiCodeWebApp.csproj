@@ -105,6 +105,11 @@
     <Content Include="Areas\ManagerPanel\Assets\images\MusicodeLogo.png" />
     <Content Include="Areas\ManagerPanel\Assets\images\MusicodeLogo.svg" />
     <Content Include="Areas\ManagerPanel\Assets\images\recent.png" />
+    <Content Include="Assets\css\mainFormStyle.css" />
+    <Content Include="Assets\css\mainStyle.css" />
+    <Content Include="Assets\Images\MusiCode Logo.jpg" />
+    <Content Include="Assets\Images\MusicodeLogo-White.png" />
+    <Content Include="Assets\Images\MusicodeLogo.png" />
     <Content Include="Assets\ProductImages\none.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -120,18 +125,26 @@
     <Compile Include="Areas\ManagerPanel\Data\ManagerLoginViewModel.cs" />
     <Compile Include="Areas\ManagerPanel\Filters\ManagerLoginRequiredFilterAttribute.cs" />
     <Compile Include="Areas\ManagerPanel\ManagerPanelAreaRegistration.cs" />
+    <Compile Include="Controllers\MainpageController.cs" />
+    <Compile Include="Controllers\MemberLoginController.cs" />
+    <Compile Include="Controllers\RegisterController.cs" />
+    <Compile Include="Filters\MemberLoginRequiredFilterAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Brand.cs" />
+    <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Entity.cs" />
+    <Compile Include="Models\Favorite.cs" />
     <Compile Include="Models\Manager.cs" />
     <Compile Include="Models\ManagerRole.cs" />
+    <Compile Include="Models\Member.cs" />
     <Compile Include="Models\MusiCodeDBModel.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TempModel\MemberLoginViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -150,6 +163,10 @@
     <Content Include="Areas\ManagerPanel\Views\Product\Edit.cshtml" />
     <Content Include="Areas\ManagerPanel\Views\System\Error.cshtml" />
     <None Include="packages.config" />
+    <Content Include="Views\Shared\HomeLayoutPage.cshtml" />
+    <Content Include="Views\Mainpage\Index.cshtml" />
+    <Content Include="Views\MemberLogin\Index.cshtml" />
+    <Content Include="Views\Register\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -159,7 +176,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

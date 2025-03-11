@@ -1,0 +1,47 @@
+﻿@model MusiCodeWebApp.TempModel.MemberLoginViewModel
+@{
+    ViewBag.Title = "Üye Giriş";
+    Layout = "~/Views/Shared/HomeLayoutPage.cshtml";
+}
+
+@section interfacestyle
+{
+    <link href="~/Assets/css/mainFormStyle.css" rel="stylesheet" />
+}
+
+<div class="topInfo">
+    <h2 style="text-align:center">Üye Giriş</h2>
+    <div class="regPanel">
+        <div class="logo">
+            <img src="~/Areas/ManagerPanel/Assets/images/MusicodeLogo.png" />
+        </div>
+        @if (TempData["Success"] != null)
+        {
+            <h3 style="color:forestgreen; margin-bottom:10px;">@TempData["Success"]</h3>
+            TempData["Success"] = null;
+        }
+        @using (Html.BeginForm())
+        {
+
+            @Html.AntiForgeryToken()
+
+            <div class="row">
+                <label>E-Posta</label>
+                @Html.EditorFor(x => x.Mail, new { htmlAttributes = new { @class = "textbox" } })
+                @Html.ValidationMessageFor(x => x.Mail, "", new { @class = "validationmesage" })
+            </div>
+
+            <div class="row">
+                <label>Şifre</label>
+                @Html.EditorFor(x => x.Password, new { htmlAttributes = new { @class = "textbox" } })
+                @Html.ValidationMessageFor(x => x.Password, "", new { @class = "validationmesage" })
+            </div>
+            <div class="row">
+                @Html.EditorFor(x => x.RememberMe) <label for="RememberMe">Beni Hatırla</label>
+            </div>
+            <div class="row">
+                <button type="submit" class="formButton">Giriş Yap</button>
+            </div>
+        }
+    </div>
+</div>

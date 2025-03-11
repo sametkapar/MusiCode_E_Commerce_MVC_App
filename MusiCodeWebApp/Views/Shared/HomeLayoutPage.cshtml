@@ -1,0 +1,74 @@
+﻿@using MusiCodeWebApp.Models
+@{
+    Member mb = new Member();
+    if (Session["MemberSession"] != null)
+    {
+        mb = Session["MemberSession"] as Member;
+    }
+
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Assets/css/mainStyle.css" rel="stylesheet" />
+    @RenderSection("interfacestyle", false)
+</head>
+<body>
+    <div class="bosluk">
+    </div>
+    <div class="header">
+        <div class="topInfo">
+            <div class="infoLeft">
+                <label>24 saat için ücretsiz kargo...(Link)</label>
+            </div>
+            <div class="infoRigth">
+                <label>0 (222) 222 26 26</label>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="topInfo">
+        <div class="logoArea">
+            <img src="~/Assets/Images/MusicodeLogo.png" />
+        </div>
+        <div class="memberArea">
+            @{
+                if (Session["MemberSession"] != null)
+                { 
+                    <span>@mb.UserName</span>
+                    <a href="@Url.Action("LogOut", "MemberLogin")">ÇIKIŞ YAP</a>
+                    <label>|</label>
+                    <a href="@Url.Action("Index", "Manager")">PROFİLİM</a>
+                    <label>|</label>
+                }
+                else
+                {
+                    <a href="@Url.Action("Index", "MemberLogin")">GİRİŞ YAP</a>
+                    <label>|</label>
+                    <a href="@Url.Action("Index", "Register")">ÜYE OL</a>
+                    <label>|</label>
+                }
+            }
+            <a href="#">FAVORİLER</a>
+            <label>|</label>
+            <a href="#">SEPET</a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="topInfo">
+        <div class="mainMenu">
+            <a href="@Url.Action("Index","Mainpage")">ANASAYFA </a>
+            <a href="#">KATEGORİLER</a>
+            <a href="#">KAMPANYALAR</a>
+            <a href="#">İLETİŞİM</a>
+        </div>
+    </div>
+
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
